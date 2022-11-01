@@ -29,11 +29,13 @@ header img{
 .pricing{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .gallery{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .card{
     width: 100%;
@@ -61,14 +63,10 @@ header img{
         width: 300px;
     }
     .pricing{
-        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
     }
     .gallery{
-        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
     }
     .gallery img{
         width: 300px;
