@@ -1,0 +1,80 @@
+@keyframes fadein {
+    from{opacity: 0%}
+    to{opacity: 100%}
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.nav_links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_item{
+    width: 100%;
+    text-align: center;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header img{
+    width: 100%;
+    animation: 3s fadein;
+}
+
+.pricing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 100%;
+}
+
+.gallery img{
+    width: 100%;
+}
+
+@media (min-width: 700px){
+
+    header{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    header img{
+        width: 400px;
+        display: flex;
+    }
+    .nav_links{
+        flex-wrap: nowrap;
+    }
+    .card{
+        width: 300px;
+    }
+    .pricing{
+        flex-wrap: wrap;
+    }
+    .gallery{
+        flex-wrap: wrap;
+    }
+    .gallery img{
+        width: 300px;
+    }
+}
+
+@media (prefers-reduced-motion){
+    header img{
+        animation: none;
+    }
+}
